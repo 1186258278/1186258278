@@ -20,10 +20,10 @@
 <!--PINNED_START-->
 | 项目 | 简介 | 技术栈 | Stars |
 |:-----|:-----|:-------|------:|
-| [🦞 OpenClaw 汉化版](https://github.com/1186258278/OpenClawChineseTranslation) | Claude/ChatGPT AI 助手 - 全平台中文版，每小时自动同步 | `JavaScript` | ![](https://img.shields.io/github/stars/1186258278/OpenClawChineseTranslation?style=flat&label=&color=yellow) |
-| [🚀 OpenCode 汉化版](https://github.com/1186258278/OpenCodeChineseTranslation) | 开源 AI 编程助手中文发行版，全自动三端构建 | `TypeScript` | ![](https://img.shields.io/github/stars/1186258278/OpenCodeChineseTranslation?style=flat&label=&color=yellow) |
-| [📧 晴辰云邮](https://github.com/1186258278/QingChenMail) | 企业级自建邮件营销系统，DKIM/SPF 签名，可视化管理 | `Go` `HTML` | ![](https://img.shields.io/github/stars/1186258278/QingChenMail?style=flat&label=&color=yellow) |
-| [🔍 TalentLens](https://github.com/1186258278/TalentLens) | AI 驱动的智能简历筛选，支持 Win/Mac 双平台 | `Vue` | ![](https://img.shields.io/github/stars/1186258278/TalentLens?style=flat&label=&color=yellow) |
+| [🦞 OpenClaw 汉化版](https://github.com/1186258278/OpenClawChineseTranslation) | 🦞 OpenClaw (Clawdbot/Moltbot) 汉化版 - 开源个人 AI 助手中... | `JavaScript` | ![](https://img.shields.io/github/stars/1186258278/OpenClawChineseTranslation?style=flat&label=&color=yellow) |
+| [🚀 OpenCode 汉化版](https://github.com/1186258278/OpenCodeChineseTranslation) | 🚀 OpenCode 汉化发行版 | ⚡️ 每日自动同步官方最新版 | 全自动构建三端安装包 ... | `JavaScript` | ![](https://img.shields.io/github/stars/1186258278/OpenCodeChineseTranslation?style=flat&label=&color=yellow) |
+| [📧 晴辰云邮](https://github.com/1186258278/QingChenMail) | 企业级自建邮件营销解决方案 | `HTML` | ![](https://img.shields.io/github/stars/1186258278/QingChenMail?style=flat&label=&color=yellow) |
+| [🔍 TalentLens](https://github.com/1186258278/TalentLens) | AI-powered resume screening tool for HR / AI 驱动... | `Vue` | ![](https://img.shields.io/github/stars/1186258278/TalentLens?style=flat&label=&color=yellow) |
 <!--PINNED_END-->
 
 <br/>
