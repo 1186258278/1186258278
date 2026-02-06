@@ -1,0 +1,95 @@
+name: Sync Pinned Repos to README
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # 每6小时同步一次
+  workflow_dispatch:        # 手动触发
+  push:
+    branches: [main]
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch pinned repos and update README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          USERNAME="${{ github.repository_owner }}"
+
+          # 用 GitHub GraphQL API 获取置顶仓库
+          PINNED_JSON=$(curl -s -H "Authorization: bearer $GH_TOKEN" \
+            -X POST https://api.github.com/graphql \
+            -d "{\"query\": \"{ user(login: \\\"$USERNAME\\\") { pinnedItems(first: 6, types: REPOSITORY) { nodes { ... on Repository { name description url stargazerCount primaryLanguage { name } } } } } }\"}")
+
+          # 解析 JSON 生成 Markdown 表格
+          TABLE=$(echo "$PINNED_JSON" | python3 -c "
+          import json, sys
+
+          data = json.load(sys.stdin)
+          nodes = data['data']['user']['pinnedItems']['nodes']
+
+          # emoji 映射
+          emoji_map = {
+              'OpenClawChineseTranslation': '🦞',
+              'OpenCodeChineseTranslation': '🚀',
+              'QingChenMail': '📧',
+              'TalentLens': '🔍',
+          }
+
+          lines = []
+          lines.append('| 项目 | 简介 | 技术栈 | Stars |')
+          lines.append('|:-----|:-----|:-------|------:|')
+
+          for repo in nodes:
+              name = repo['name']
+              desc = (repo['description'] or '').split('。')[0].split('. ')[0]
+              # 截断过长描述
+              if len(desc) > 50:
+                  desc = desc[:47] + '...'
+              url = repo['url']
+              lang = repo['primaryLanguage']['name'] if repo['primaryLanguage'] else '-'
+              emoji = emoji_map.get(name, '📦')
+
+              # 显示名称：中文友好
+              display = name
+              if 'ChineseTranslation' in name:
+                  display = name.replace('ChineseTranslation', ' 汉化版')
+              elif name == 'QingChenMail':
+                  display = '晴辰云邮'
+
+              stars_badge = f'![](https://img.shields.io/github/stars/{repo[\"url\"].split(\"github.com/\")[1]}?style=flat&label=&color=yellow)'
+              lines.append(f'| [{emoji} {display}]({url}) | {desc} | \`{lang}\` | {stars_badge} |')
+
+          print('\n'.join(lines))
+          ")
+
+          # 替换 README 中 <!--PINNED_START--> 和 <!--PINNED_END--> 之间的内容
+          python3 -c "
+          content = open('README.md', 'r').read()
+          start_marker = '<!--PINNED_START-->'
+          end_marker = '<!--PINNED_END-->'
+
+          if start_marker in content and end_marker in content:
+              before = content[:content.index(start_marker) + len(start_marker)]
+              after = content[content.index(end_marker):]
+              table = '''$TABLE'''
+              new_content = before + '\n' + table + '\n' + after
+              open('README.md', 'w').write(new_content)
+              print('README updated successfully')
+          else:
+              print('Markers not found, skipping')
+          "
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --staged --quiet || git commit -m "chore: auto-sync pinned repos"
+          git push
