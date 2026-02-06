@@ -56,13 +56,13 @@
 <!-- 由 GitHub Actions 自动生成，存储在仓库中，100% 可靠 -->
 <div align="center">
 
-<img src="./profile-summary-card-output/tokyonight/0-profile-details.svg" width="100%" />
+<img src="https://raw.githubusercontent.com/1186258278/1186258278/main/profile-summary-card-output/tokyonight/0-profile-details.svg" width="100%" />
 
-<img src="./profile-summary-card-output/tokyonight/3-stats.svg" width="49%" />
-<img src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" width="49%" />
+<img src="https://raw.githubusercontent.com/1186258278/1186258278/main/profile-summary-card-output/tokyonight/3-stats.svg" width="49%" />
+<img src="https://raw.githubusercontent.com/1186258278/1186258278/main/profile-summary-card-output/tokyonight/1-repos-per-language.svg" width="49%" />
 
-<img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" />
-<img src="./profile-summary-card-output/tokyonight/4-productive-time.svg" width="49%" />
+<img src="https://raw.githubusercontent.com/1186258278/1186258278/main/profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" />
+<img src="https://raw.githubusercontent.com/1186258278/1186258278/main/profile-summary-card-output/tokyonight/4-productive-time.svg" width="49%" />
 
 </div>
 
