@@ -25,7 +25,7 @@ jobs:
             -X POST https://api.github.com/graphql \
             -d "{\"query\": \"{ user(login: \\\"$USERNAME\\\") { pinnedItems(first: 6, types: REPOSITORY) { nodes { ... on Repository { name description url stargazerCount primaryLanguage { name } } } } } }\"}")
 
-          # 解析 JSON 生成 Markdown 表格
+          # 解析 JSON 生成 Markdown 引用块
           TABLE=$(echo "$PINNED_JSON" | python3 -c "
           import json, sys
 
@@ -41,28 +41,28 @@ jobs:
           }
 
           lines = []
-          lines.append('| 项目 | 简介 | 技术栈 | Stars |')
-          lines.append('|:-----|:-----|:-------|------:|')
-
           for repo in nodes:
               name = repo['name']
               desc = (repo['description'] or '').split('。')[0].split('. ')[0]
-              # 截断过长描述
-              if len(desc) > 50:
-                  desc = desc[:47] + '...'
+              if len(desc) > 60:
+                  desc = desc[:57] + '...'
               url = repo['url']
-              lang = repo['primaryLanguage']['name'] if repo['primaryLanguage'] else '-'
+              lang = repo['primaryLanguage']['name'] if repo['primaryLanguage'] else ''
               emoji = emoji_map.get(name, '📦')
 
-              # 显示名称：中文友好
               display = name
               if 'ChineseTranslation' in name:
                   display = name.replace('ChineseTranslation', ' 汉化版')
               elif name == 'QingChenMail':
                   display = '晴辰云邮'
 
-              stars_badge = f'![](https://img.shields.io/github/stars/{repo[\"url\"].split(\"github.com/\")[1]}?style=flat&label=&color=yellow)'
-              lines.append(f'| [{emoji} {display}]({url}) | {desc} | \`{lang}\` | {stars_badge} |')
+              lang_tag = f' \`{lang}\`' if lang else ''
+              lines.append(f'> **[{emoji} {display}]({url})** — {desc}{lang_tag}')
+              lines.append(f'>')
+
+          # 去掉最后一个空引用行
+          if lines and lines[-1] == '>':
+              lines.pop()
 
           print('\n'.join(lines))
           ")
