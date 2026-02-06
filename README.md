@@ -1,14 +1,12 @@
 <div align="center">
 
-<!-- 动态打字效果 -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=4000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=%E6%99%B4%E5%A4%A9+%7C+QingTian;Open+Source+Enthusiast+%F0%9F%9A%80" alt="Typing SVG" /></a>
-
-<br/>
+<!-- 顶部渐变装饰 -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=180&section=header&text=晴天%20|%20QingTian&fontSize=36&fontColor=ffffff&fontAlignY=35&desc=Open%20Source%20Enthusiast%20🚀&descSize=16&descAlignY=55&animation=twinkling" width="100%" />
 
 <!-- 社交徽章 -->
-[![Website](https://img.shields.io/badge/Website-qt.cool-blue?style=flat-square&logo=google-chrome&logoColor=white)](https://qt.cool)
-[![GitHub](https://img.shields.io/badge/GitHub-1186258278-181717?style=flat-square&logo=github)](https://github.com/1186258278)
-[![Stars](https://img.shields.io/github/stars/1186258278?style=flat-square&logo=github&label=Total%20Stars&color=yellow)](https://github.com/1186258278)
+[![Website](https://img.shields.io/badge/🌐_Website-qt.cool-blue?style=for-the-badge)](https://qt.cool)
+[![GitHub](https://img.shields.io/badge/GitHub-1186258278-181717?style=for-the-badge&logo=github)](https://github.com/1186258278)
+[![Stars](https://img.shields.io/github/stars/1186258278?style=for-the-badge&logo=github&label=Total%20Stars&color=yellow)](https://github.com/1186258278)
 
 </div>
 
@@ -24,7 +22,6 @@
 - 🚀 维护 [OpenCode 汉化发行版](https://github.com/1186258278/OpenCodeChineseTranslation)，**214+ Stars**，全自动构建三端安装包
 - 📧 开发 [QingChenMail](https://github.com/1186258278/QingChenMail) 企业级自建邮件营销解决方案
 - 🔍 开发 [TalentLens](https://github.com/1186258278/TalentLens) AI 驱动的智能简历筛选工具
-- 🌐 个人网站: [qt.cool](https://qt.cool)
 
 ---
 
@@ -54,40 +51,35 @@
 
 ---
 
-## 🌟 精选项目
+## 📊 GitHub 统计
+
+<!-- 这些图片由 GitHub Actions 自动生成，存储在仓库中，永远不会挂 -->
+<div align="center">
+
+<img src="./profile-summary-card-output/tokyonight/0-profile-details.svg" width="100%" />
+
+<img src="./profile-summary-card-output/tokyonight/3-stats.svg" width="49%" />
+<img src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg" width="49%" />
+
+<img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" />
+<img src="./profile-summary-card-output/tokyonight/4-productive-time.svg" width="49%" />
+
+</div>
 
 <div align="center">
 
-<a href="https://github.com/1186258278/OpenClawChineseTranslation">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=1186258278&repo=OpenClawChineseTranslation&theme=tokyonight&hide_border=true&border_radius=10" />
-</a>
-<a href="https://github.com/1186258278/OpenCodeChineseTranslation">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=1186258278&repo=OpenCodeChineseTranslation&theme=tokyonight&hide_border=true&border_radius=10" />
-</a>
-<a href="https://github.com/1186258278/QingChenMail">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=1186258278&repo=QingChenMail&theme=tokyonight&hide_border=true&border_radius=10" />
-</a>
-<a href="https://github.com/1186258278/TalentLens">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=1186258278&repo=TalentLens&theme=tokyonight&hide_border=true&border_radius=10" />
-</a>
+<!-- 连续贡献统计 - 使用 demolab 官方维护站点 -->
+<img src="https://streak-stats.demolab.com/?user=1186258278&theme=tokyonight&hide_border=true&border_radius=10&date_format=Y.n.j&locale=zh_Hans" width="60%" />
 
 </div>
 
 ---
 
-## 📊 GitHub 统计
+## 🏆 GitHub 奖杯
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=1186258278&show_icons=true&theme=tokyonight&hide_border=true&border_radius=10&include_all_commits=true&count_private=true&rank_icon=github" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=1186258278&layout=compact&theme=tokyonight&hide_border=true&border_radius=10&langs_count=8" />
-
-</div>
-
-<div align="center">
-
-<!-- 连续贡献统计 -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=1186258278&theme=tokyonight&hide_border=true&border_radius=10&date_format=Y.n.j&locale=zh_Hans" />
+<img src="https://github-profile-trophy.vercel.app/?username=1186258278&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=5" width="100%" />
 
 </div>
 
@@ -126,6 +118,7 @@
 
 **如果我的项目对你有帮助，欢迎 ⭐ Star 支持！**
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=100&section=footer" />
+<!-- 底部渐变装饰 -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=100&section=footer" width="100%" />
 
 </div>
