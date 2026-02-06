@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- 顶部渐变装饰 -->
+<!-- 顶部渐变装饰 + 标题 -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=180&section=header&text=晴天%20|%20QingTian&fontSize=36&fontColor=ffffff&fontAlignY=35&desc=Open%20Source%20Enthusiast%20🚀&descSize=16&descAlignY=55&animation=twinkling" width="100%" />
 
 <!-- 社交徽章 -->
@@ -53,7 +53,7 @@
 
 ## 📊 GitHub 统计
 
-<!-- 这些图片由 GitHub Actions 自动生成，存储在仓库中，永远不会挂 -->
+<!-- 由 GitHub Actions 自动生成，存储在仓库中，100% 可靠 -->
 <div align="center">
 
 <img src="./profile-summary-card-output/tokyonight/0-profile-details.svg" width="100%" />
@@ -63,23 +63,6 @@
 
 <img src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" width="49%" />
 <img src="./profile-summary-card-output/tokyonight/4-productive-time.svg" width="49%" />
-
-</div>
-
-<div align="center">
-
-<!-- 连续贡献统计 - 使用 demolab 官方维护站点 -->
-<img src="https://streak-stats.demolab.com/?user=1186258278&theme=tokyonight&hide_border=true&border_radius=10&date_format=Y.n.j&locale=zh_Hans" width="60%" />
-
-</div>
-
----
-
-## 🏆 GitHub 奖杯
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=1186258278&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=5" width="100%" />
 
 </div>
 
