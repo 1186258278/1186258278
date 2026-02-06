@@ -67,7 +67,7 @@
 
 <div align="center">
 
-![访问量](https://komarev.com/ghpvc/?username=1186258278&style=flat-square&color=333333&label=访问量)
+![访问量](https://komarev.com/ghpvc/?username=1186258278&style=flat-square&color=blue&label=访问量)
 
 `如果项目对你有帮助，欢迎 Star ⭐`
 
