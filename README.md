@@ -21,7 +21,7 @@ experience:
 ## 📌 开源项目
 
 <!--PINNED_START-->
-> **[🦞 ClawPanel]([https://github.com/1186258278/OpenClawChineseTranslation](https://github.com/qingchencloud/clawpanel))** — 🦞 OpenClaw 可视化管理面板 — 内置 AI 助手（工具调用 + 图片识别 + 多模态），一键安装部署OpenClaw！纯开源`
+> **[🦞 ClawPanel](https://github.com/qingchencloud/clawpanel)** — 🦞 OpenClaw 可视化管理面板 — 内置 AI 助手（工具调用 + 图片识别 + 多模态），一键安装部署OpenClaw！纯开源`
 >
 > **[🦞 OpenClaw 汉化版](https://github.com/1186258278/OpenClawChineseTranslation)** — 🦞 OpenClaw (Clawdbot/Moltbot) 汉化版 - 开源个人 AI 助手中文版 | Claud... `JavaScript`
 >
