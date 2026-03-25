@@ -7,13 +7,13 @@ name:       晴天
 role:       全栈工程师
 location:   中国
 site:       https://qt.cool
-focus:      [ 商城系统, 客服系统, 企业级SaaS, 分布式架构 ]
+focus:      [ ClawPanel面板，商城系统, 客服系统, 企业级SaaS, 分布式架构 ]
 hobby:      [ 开源汉化, AI工具 ]
 experience:
   - 大型商城系统全栈开发与架构设计
   - 智能客服系统后端 & 实时通信
   - 多租户 SaaS 平台从 0 到 1 落地
-  - 开源项目汉化，累计 1000+ Stars
+  - 开源项目，累计 5000+ Stars
 ```
 
 <br/>
@@ -21,6 +21,8 @@ experience:
 ## 📌 开源项目
 
 <!--PINNED_START-->
+> **[🦞 ClawPanel]([https://github.com/1186258278/OpenClawChineseTranslation](https://github.com/qingchencloud/clawpanel))** — 🦞 OpenClaw 可视化管理面板 — 内置 AI 助手（工具调用 + 图片识别 + 多模态），一键安装部署OpenClaw！纯开源`
+>
 > **[🦞 OpenClaw 汉化版](https://github.com/1186258278/OpenClawChineseTranslation)** — 🦞 OpenClaw (Clawdbot/Moltbot) 汉化版 - 开源个人 AI 助手中文版 | Claud... `JavaScript`
 >
 > **[🚀 OpenCode 汉化版](https://github.com/1186258278/OpenCodeChineseTranslation)** — 🚀 OpenCode 汉化发行版 | ⚡️ 每日自动同步官方最新版 | 全自动构建三端安装包 (Win/Mac/L... `JavaScript`
